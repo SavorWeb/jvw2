@@ -1,0 +1,30 @@
+form {
+	margin: 0px;
+	padding: 0px;
+	}
+	
+.border {
+	border: 0px;
+	background-color:#fff;
+	padding: 5px;
+	margin: 4px 0;
+	font-family: Arial, Helvetica, Sans Serif;
+	font-size: 90%;
+	color: #666666;
+	}
+	
+.go {
+	font-family: Arial, Helvetica, Sans Serif;
+	font-size: 14px;
+	background-color: #1F3963;
+	color: #fff;
+	width: 90px;
+	padding: 5px;
+	margin: 0;
+	border: 0px;
+	text-transform: uppercase;
+	}
+
+.required {
+	color: red;
+	}

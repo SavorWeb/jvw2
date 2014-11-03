@@ -1,0 +1,654 @@
+﻿/*
+	Name: James, Vernon & Weeks
+	Date: July 2013
+*/
+
+html {
+	-webkit-text-size-adjust: none;
+	/* Prevent font scaling in landscape*/
+	}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	font-family: Arial, Helvetica, Sans Serif;
+	font-size: 14px;
+	color: #333333;
+	background: url("../img/common/binding_dark.png");
+	background-color: #333333;
+	}
+
+img, img a, a img {
+	border: 0;
+	}
+
+figure, section, article {
+	margin: 0;
+	padding: 0;
+	}
+
+/*HEADER*/
+
+header {
+	height: 120px;
+	widthL: 100%;
+	margin: auto;
+	background: url("../img/common/bkgrnd-header.png");
+	backgroud-color: #000;
+	background-repeat: no-repeat;
+	}
+	
+#topSplit {
+	height: 80px;
+	}
+	
+#logoCont {
+	float: left;
+	width: 414px;
+	height: 43px;
+	padding: 15px 0 0 10px;
+	}
+	
+#phone {
+	font-family: 'Asap', Helvetica, Arial, sans-serif;
+	float: right;
+	width: 350px;
+	height: 43px;
+	padding: 22px 10px 0 0;
+	margin: 0px;
+	text-align: center;
+	font-size: 19px;
+	line-height: 20px;
+	color: #fff;
+	font-weight: 400px;
+	letter-spacing: 1px;
+	}
+
+/*HEADER NAV*/
+
+#topNav {
+	width: 960px;
+	margin: auto;
+}
+/* JS disabled styles */
+.no-js nav li:hover ul { display:block; }
+
+/* base nav styles */
+nav { 
+	display:block; 
+	font-family: 'Asap', Helvetica, Arial, sans-serif;
+	position:relative;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 40px;
+	vertical-align: middle;
+	height: 40px;
+	background-position: top center; 
+	background: url("../img/common/bkgrnd-nav.png");	
+	background-repeat: repeat-x; 
+	}
+nav ul { 
+	list-style: none;
+	margin:0;
+	 }
+nav li { 
+	margin: 0px;
+	padding: 0 14px;
+	position: relative;
+	float:left; 
+	list-style-type:none;
+	}
+nav ul:after { 
+	display:block; 
+	height:0; 
+	clear:both; 
+	visibility:hidden; 
+	}
+nav li a { 
+	display:block;  
+	color:#0B4F75; 
+	text-decoration:none; 
+	text-align: left;
+	white-space: nowrap;
+	}
+nav li a:hover {
+	text-decoration:none; 
+	color: #C98B45;
+}
+nav li a:focus { 
+	outline:none; 
+	text-decoration:none; 
+	}
+nav ul ul { 
+	display:none; 
+	position:absolute; 
+	left:8px;  
+	padding: 15px 0;
+	z-index: 9999;
+	background: #809eac; /* Old browsers */
+
+	background: -moz-linear-gradient(left,  #809eac 0%, #ffffff 21%, #ffffff 73%, #809eac 100%); /* FF3.6+ */
+	
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#809eac), color-stop(21%,#ffffff), color-stop(73%,#ffffff), color-stop(100%,#809eac)); /* Chrome,Safari4+ */
+	
+	background: -webkit-linear-gradient(left,  #809eac 0%,#ffffff 21%,#ffffff 73%,#809eac 100%); /* Chrome10+,Safari5.1+ */
+	
+	background: -o-linear-gradient(left,  #809eac 0%,#ffffff 21%,#ffffff 73%,#809eac 100%); /* Opera 11.10+ */
+	
+	background: -ms-linear-gradient(left,  #809eac 0%,#ffffff 21%,#ffffff 73%,#809eac 100%); /* IE10+ */
+	
+	background: linear-gradient(to right,  #809eac 0%,#ffffff 21%,#ffffff 73%,#809eac 100%); /* W3C */
+	
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#809eac', endColorstr='#809eac',GradientType=1 ); /* IE6-9 */
+	
+
+	 }
+nav .dropdown:after {
+	content: "▾";
+	position: absolute;
+	top: 2px;
+	right: 0;
+}
+nav .dropdown:hover:after {
+	color: #C98B45;
+}
+nav ul li:hover > ul {
+	display:block;
+}
+nav ul ul li { float:none; padding: 0 2px; }
+nav ul ul a { 
+	color: #0B4F75;
+	border: 0 none; 
+	font-size:16px; 
+	color: #0B4F75;
+	line-height: 26px;
+	padding: 1px 12px;
+	text-transform: none;
+	letter-spacing: 0px;
+	font-weight: 400;
+	}
+nav ul ul a:hover { color: #c98b45;}
+
+/* CSS3 */
+.borderradius nav { -moz-border-radius:4px 4px 0 0; -webkit-border-radius:4px 4px 0 0; border-radius:4px 4px 0 0; }
+.cssgradients ul ul nav li:hover { background-image:-moz-linear-gradient(0% 100px 90deg, #999, #222); background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#222), to(#555)); }
+.borderradius nav ul ul { 
+	-moz-border-radius-bottomleft:4px; 
+	-moz-border-radius-bottomright:4px; 
+	-webkit-border-bottom-left-radius:4px; 
+	-webkit-border-bottom-right-radius:4px; 
+	border-bottom-left-radius:4px; 
+	border-bottom-right-radius:4px; 
+	-moz-box-shadow: 2px 5px 7px #333;
+	-webkit-box-shadow: 2px 5px 7px #333;
+	box-shadow: 2px 5px 7px #333;
+	border-top: 1px solid #939393;
+	}
+.boxshadow.rgba nav ul ul { 
+	background-color: #93BECC; 
+	 }
+
+
+.csstransforms ul a span { -moz-transform:rotate(-180deg);-webkit-transform:rotate(-180deg); }
+
+/* fallbacks */
+.no-cssgradients nav, .no-js nav { padding-bottom:4px; border:none; background:url(../fallback/navBG.gif) repeat-x 0 0; }
+.no-borderradius nav ul, .no-js nav ul { background:url(../fallback/navRight.gif) no-repeat 100% 0; }
+.no-borderradius nav ul ul, .no-js nav ul ul { background:none; }
+.no-borderradius nav li, .no-js nav li { height:44px; }
+.no-cssgradients nav li:hover, .no-js nav li:hover { background:url(../fallback/navOverBG.gif) repeat-x 0 0; }
+.no-borderradius nav li li, .no-js nav li li { height:auto; width:98%; left:-2px; }
+.no-borderradius nav li:first-child, .no-js nav li:first-child { background:url(../fallback/navLeft.gif) no-repeat 0 0; }
+.no-borderradius nav li:first-child:hover, .no-js nav li:first-child:hover { background:url(../fallback/navOverLeft.gif) no-repeat 0 0; }
+.no-borderradius nav li li:first-child, .no-js nav li li:first-child { background:none; }
+.no-rgba nav ul ul, .no-js nav ul ul { left:1px; padding-left:2px; background:url(../fallback/subnavBG.png) no-repeat 100% 100%; }
+.no-rgba nav ul ul a, .no-js nav ul ul a { left:3px; }
+.no-rgba nav ul ul a:hover { background:url(../fallback/subOverBG.png) repeat 0 0; }
+.no-csstransforms ul a span { height:7px; width:12px; margin-top:8px; text-indent:-5000px; overflow:hidden; background:url(../fallback/indicator.png) no-repeat 0 0; }
+.no-borderradius ul ul li.last { margin-bottom:10px; }
+.no-cssgradients.boxshadow nav { box-shadow:none; }
+
+/*COMMON*/
+
+	
+.baseWidth {
+	width: 960px;
+	margin: auto;
+	}
+	
+
+#base {
+	overflow: hidden;
+	}
+	
+#whiteWrap {
+	background-color: #fff;
+	overflow: hidden;
+	}
+	
+#home-midL {
+	width: 290px;
+	height: 278px;
+	float: left;
+	background-position: top center; 
+	background: url("../img/bkgrnd-home-midL.png");
+	text-align: center;	
+	}
+		
+		#calloutHome {
+			font-size: 25px;
+			line-height:25px;
+			text-align: center;
+			color: #fff;
+			font-weight: 400;
+			text-shadow: 1px 1px #333333;
+			font-family: 'Asap', Helvetica, Arial, sans-serif;
+			padding: 35px 0 15px 0;
+			letter-spacing: 1px;
+			}
+			
+		#contactBug {
+			font-family: 'Asap', Helvetica, Arial, sans-serif;
+			font-size: 19px;
+			line-height: 22px;
+			color: #0B4F75;
+			padding: 10px 0;
+			font-weight: 400;
+			letter-spacing: 1px;
+			}
+	
+#home-midR {
+	float: right;
+	width: 670px;
+	height: 278px;
+	}
+	
+#content {
+	overflow: hidden;
+	}
+	
+#news {
+	width: 290px;
+	float: left;
+	}
+	
+	#newsHead {
+		height: 42px;
+		width: 290px;
+		background-position: top center; 
+		background: url("../img/common/head-news.png");
+		text-align: center;
+		line-height: 44px;
+		vertical-align: middle;
+		overflow: hidden;
+		}
+		
+	#newsBody {
+		overflow: hidden;
+		padding: 15px 15px 25px 15px;
+		width: 250px;
+		font-size: 13px;
+		line-height: 18px;
+		}
+		
+		hr {
+			color: #C98B45;
+			background-color: #C98B45;
+			height: 5px;
+			margin: 5px 0;
+			border: 0;
+ 			width: 100%;
+			}
+#bodyMain {
+	width: 645px;
+	float: right;
+	padding: 25px 0 45px 25px;
+	margin: 0px;
+	min-height: 250px;
+	}
+	
+#videosHome {
+	float: right;
+	width: 225px;
+	padding: 35px 0 0 0;
+	font-size: 13px;
+	line-height: 18px;
+	}
+	
+	#videoText {
+		padding: 0 0 10px 0;
+		width: 210px;
+		}
+
+footer {
+	overflow: hidden;
+	}
+	
+#footerColL {
+	float: left;
+	width: 200px;
+	padding: 0px 25px 0 10px;
+	margin: 35px 0;
+	border-right: 2px solid #666666;
+	color: #cccccc;
+	line-height: 19px;
+	font-size: 13px;
+	}
+
+#footerColC {
+	float: left;
+	width: 200px;
+	padding: 0px 25px 0 50px;
+	margin: 35px 0;
+	border-right: 2px solid #666666;
+	color: #cccccc;
+	line-height: 19px;
+	font-size: 13px;
+	}
+	
+#footerColR {
+	float: right;
+	padding: 35px;
+	width: 355px;
+	}
+		
+/*INTERNAL*/
+
+#int-midL {
+	width: 290px;
+	height: 110px;
+	float: left;
+	background-position: top center; 
+	background: url("../img/bkgrnd-int-midL.png");
+	text-align: center;	
+	}
+	
+#int-midR {
+	float: right;
+	width: 670px;
+	height: 110px;
+	background-color: #cccccc;
+	}
+	
+	#calloutInt {
+			font-size: 22px;
+			line-height: 22px;
+			text-align: center;
+			color: #fff;
+			font-weight: lighter;
+			text-shadow: 1px 1px #333333;
+			font-family: 'Asap', Helvetica, Arial, sans-serif;
+			padding: 20px 0;
+			letter-spacing: 1px;
+			}
+
+#contactCont {
+	padding: 15px 0;
+	overflow: hidden;
+	}
+
+#contactL {
+	float: left;
+	width: 300px;
+	padding: 15px 0;
+	}
+	
+#contactR {
+	float: right;
+	width: 300px;
+	padding: 15px 0;
+	}
+
+/*FONTS*/
+
+h1 {
+	color: #0B4F75;
+	font-weight: 400;
+	padding: 0 0 12px 0;
+	margin: 0px;
+	font-size: 25px;
+	line-height: 26px;
+	font-family: 'Asap', Helvetica, Arial, sans-serif;
+	}
+	
+h2 {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	padding: 0 0 10px 0;
+	color: #0B4F75;
+	font-family: 'Cinzel', serif;
+	margin: 0px;
+	letter-spacing: 1px;
+	}
+	
+h3 {
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 14px;
+	padding: 0 0 10px 0;
+	color: #e6e6e6;
+	margin: 0px;
+	letter-spacing: 1px;
+	}
+	
+	
+
+footer a:link, footer a:active, footer a:visited {
+	color: #809EAC;
+	text-decoration: none;
+	}
+footer a:hover {
+	color: #fff;
+	text-decoration: none;
+	}
+
+
+#bodyMain a:link, #bodyMain a:active, #bodyMain a:visited {
+	color: #809EAC;
+	text-decoration: none;
+	}
+#bodyMain a:hover {
+	color: #0B4F75;
+	text-decoration: underline;
+	}
+	
+#newsBody a:link, #newsBody a:active, #newsBody a:visited {
+	color: #809EAC;
+	text-decoration: none;
+	}
+#newsBody a:hover {
+	color: #0B4F75;
+	text-decoration: underline;
+	}
+
+form {
+	margin: 0px;
+	padding: 0px;
+	}
+	
+.border {
+	border: 0px;
+	background-color:#fff;
+	padding: 5px;
+	margin: 4px 0;
+	font-family: Arial, Helvetica, Sans Serif;
+	font-size: 90%;
+	color: #666666;
+	}
+	
+.go {
+	font-family: Arial, Helvetica, Sans Serif;
+	font-size: 14px;
+	background-color: #1F3963;
+	color: #fff;
+	width: 90px;
+	padding: 5px;
+	margin: 0;
+	border: 0px;
+	text-transform: uppercase;
+	}
+
+.required {
+	color: red;
+	}
+
+	/*
+ * jQuery Nivo Slider v2.5.2
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2011, Gilbert Pellegrom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * March 2010
+ */
+ 
+
+#slider {
+	position:relative; width: 670px; height: 278px;
+	background:url(../img/nivo/loading.gif) no-repeat 50% 50%;
+}
+#slider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+#slider a {
+	border:0;
+	display:block;
+}
+
+.nivo-controlNav {
+	position:absolute;
+	left:270px;
+	bottom:-42px;
+	margin: auto;
+}
+.nivo-controlNav {
+	position:absolute;
+	left:270px;
+	bottom:-42px;
+	margin: auto;
+}
+.nivo-controlNav a {
+	display:block;
+	width:22px;
+	height:22px;
+	text-indent:-9999px;
+	border:0;
+	margin-right:3px;
+	float:left;
+}
+.nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(../img/nivo/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+}
+a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+a.nivo-prevNav {
+	left:15px;
+}
+
+.nivo-caption {
+    text-shadow:none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.nivo-caption a { 
+    color:#efe9d1;
+    text-decoration:underline;
+}
+
+
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.8; /* Overridden by captionOpacity setting */
+	width:100%;
+	z-index:8;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+	position:relative;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}	

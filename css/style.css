@@ -1,0 +1,840 @@
+/*
+	Name: James, Vernon & Weeks
+	Date: October 31st 2014
+*/
+/* line 6, style.scss */
+html {
+  -webkit-text-size-adjust: none;
+  /* Prevent font scaling in landscape*/
+}
+
+/* line 11, style.scss */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: Arial, Helvetica, Sans Serif;
+  font-size: 14px;
+  color: #333333;
+  background: url("../img/common/binding_dark.png");
+  background-color: #333333;
+}
+
+/* line 22, style.scss */
+img {
+  border: 0;
+}
+/* line 24, style.scss */
+img a {
+  border: 0;
+}
+
+/* line 29, style.scss */
+a img {
+  border: 0;
+}
+
+/* line 33, style.scss */
+figure, section, article {
+  margin: 0;
+  padding: 0;
+}
+
+/*HEADER*/
+/* line 40, style.scss */
+header {
+  height: 120px;
+  widthL: 100%;
+  margin: auto;
+  background: url("../img/common/bkgrnd-header.png");
+  backgroud-color: #000;
+  background-repeat: no-repeat;
+}
+
+/* line 49, style.scss */
+#topSplit {
+  height: 80px;
+}
+
+/* line 53, style.scss */
+#logoCont {
+  float: left;
+  width: 414px;
+  height: 43px;
+  padding: 15px 0 0 10px;
+}
+
+/* line 60, style.scss */
+#phone {
+  font-family: 'Asap', Helvetica, Arial, sans-serif;
+  float: right;
+  width: 350px;
+  height: 43px;
+  padding: 22px 10px 0 0;
+  margin: 0px;
+  text-align: center;
+  font-size: 19px;
+  line-height: 20px;
+  color: #fff;
+  font-weight: 400px;
+  letter-spacing: 1px;
+}
+
+/*HEADER NAV*/
+/* line 77, style.scss */
+#topNav {
+  width: 960px;
+  margin: auto;
+}
+
+/* JS disabled styles */
+/* line 84, style.scss */
+.no-js nav li:hover ul {
+  display: block;
+}
+
+/* base nav styles */
+/* line 90, style.scss */
+nav {
+  display: block;
+  font-family: 'Asap', Helvetica, Arial, sans-serif;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 40px;
+  vertical-align: middle;
+  height: 40px;
+  background-position: top center;
+  background: url("../img/common/bkgrnd-nav.png");
+  background-repeat: repeat-x;
+}
+/* line 105, style.scss */
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 109, style.scss */
+nav li {
+  margin: 0px;
+  padding: 0 14px;
+  position: relative;
+  float: left;
+  list-style-type: none;
+}
+/* line 116, style.scss */
+nav ul:after {
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 122, style.scss */
+nav li a {
+  display: block;
+  color: #0B4F75;
+  text-decoration: none;
+  text-align: left;
+  white-space: nowrap;
+}
+/* line 128, style.scss */
+nav li a:hover {
+  text-decoration: none;
+  color: #C98B45;
+}
+/* line 132, style.scss */
+nav li a:focus {
+  outline: none;
+  text-decoration: none;
+}
+/* line 137, style.scss */
+nav ul ul {
+  display: none;
+  position: absolute;
+  left: 8px;
+  padding: 15px 0;
+  z-index: 9999;
+  background: #809eac;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #809eac 0%, white 21%, white 73%, #809eac 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #809eac), color-stop(21%, white), color-stop(73%, white), color-stop(100%, #809eac));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #809eac 0%, white 21%, white 73%, #809eac 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #809eac 0%, white 21%, white 73%, #809eac 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #809eac 0%, white 21%, white 73%, #809eac 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, #809eac 0%, #ffffff 21%, #ffffff 73%, #809eac 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#809eac', endColorstr='#809eac',GradientType=1 );
+  /* IE6-9 */
+}
+/* line 161, style.scss */
+nav .dropdown:after {
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+/* line 167, style.scss */
+nav .dropdown:hover:after {
+  color: #C98B45;
+}
+/* line 172, style.scss */
+nav ul li:hover > ul {
+  display: block;
+}
+/* line 176, style.scss */
+nav ul ul li {
+  float: none;
+  padding: 0 2px;
+}
+/* line 180, style.scss */
+nav ul ul a {
+  color: #0B4F75;
+  border: 0 none;
+  font-size: 16px;
+  color: #0B4F75;
+  line-height: 26px;
+  padding: 1px 12px;
+  text-transform: none;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
+/* line 190, style.scss */
+nav ul ul a:hover {
+  color: #c98b45;
+}
+
+/* CSS3 */
+/* line 200, style.scss */
+.borderradius nav {
+  -moz-border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+
+/* line 206, style.scss */
+.cssgradients ul ul nav li:hover {
+  background-image: -moz-linear-gradient(0% 100px 90deg, #999999, #222222);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#222222), to(#555555));
+}
+
+/* line 211, style.scss */
+.borderradius nav ul ul {
+  -moz-border-radius-bottomleft: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -moz-box-shadow: 2px 5px 7px #333;
+  -webkit-box-shadow: 2px 5px 7px #333;
+  box-shadow: 2px 5px 7px #333;
+  border-top: 1px solid #939393;
+}
+
+/* line 224, style.scss */
+.boxshadow.rgba nav ul ul {
+  background-color: #93BECC;
+}
+
+/* line 228, style.scss */
+.csstransforms ul a span {
+  -moz-transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+}
+
+/* fallbacks */
+/* line 235, style.scss */
+.no-cssgradients nav, .no-js nav {
+  padding-bottom: 4px;
+  border: none;
+  background: url(../fallback/navBG.gif) repeat-x 0 0;
+}
+
+/* line 241, style.scss */
+.no-borderradius nav ul, .no-js nav ul {
+  background: url(../fallback/navRight.gif) no-repeat 100% 0;
+}
+
+/* line 245, style.scss */
+.no-borderradius nav ul ul, .no-js nav ul ul {
+  background: none;
+}
+
+/* line 249, style.scss */
+.no-borderradius nav li, .no-js nav li {
+  height: 44px;
+}
+
+/* line 253, style.scss */
+.no-cssgradients nav li:hover, .no-js nav li:hover {
+  background: url(../fallback/navOverBG.gif) repeat-x 0 0;
+}
+
+/* line 257, style.scss */
+.no-borderradius nav li li, .no-js nav li li {
+  height: auto;
+  width: 98%;
+  left: -2px;
+}
+
+/* line 263, style.scss */
+.no-borderradius nav li:first-child, .no-js nav li:first-child {
+  background: url(../fallback/navLeft.gif) no-repeat 0 0;
+}
+
+/* line 267, style.scss */
+.no-borderradius nav li:first-child:hover, .no-js nav li:first-child:hover {
+  background: url(../fallback/navOverLeft.gif) no-repeat 0 0;
+}
+
+/* line 271, style.scss */
+.no-borderradius nav li li:first-child, .no-js nav li li:first-child {
+  background: none;
+}
+
+/* line 275, style.scss */
+.no-rgba nav ul ul, .no-js nav ul ul {
+  left: 1px;
+  padding-left: 2px;
+  background: url(../fallback/subnavBG.png) no-repeat 100% 100%;
+}
+
+/* line 281, style.scss */
+.no-rgba nav ul ul a, .no-js nav ul ul a {
+  left: 3px;
+}
+
+/* line 285, style.scss */
+.no-rgba nav ul ul a:hover {
+  background: url(../fallback/subOverBG.png) repeat 0 0;
+}
+
+/* line 289, style.scss */
+.no-csstransforms ul a span {
+  height: 7px;
+  width: 12px;
+  margin-top: 8px;
+  text-indent: -5000px;
+  overflow: hidden;
+  background: url(../fallback/indicator.png) no-repeat 0 0;
+}
+
+/* line 298, style.scss */
+.no-borderradius ul ul li.last {
+  margin-bottom: 10px;
+}
+
+/* line 302, style.scss */
+.no-cssgradients.boxshadow nav {
+  box-shadow: none;
+}
+
+/*COMMON*/
+/* line 308, style.scss */
+.baseWidth {
+  width: 960px;
+  margin: auto;
+}
+
+/* line 313, style.scss */
+#base {
+  overflow: hidden;
+}
+
+/* line 317, style.scss */
+#whiteWrap {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+/* line 322, style.scss */
+#home-midL {
+  width: 290px;
+  height: 278px;
+  float: left;
+  background-position: top center;
+  background: url("../img/bkgrnd-home-midL.png");
+  text-align: center;
+}
+
+/* line 331, style.scss */
+#calloutHome {
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  text-shadow: 1px 1px #333333;
+  font-family: 'Asap', Helvetica, Arial, sans-serif;
+  padding: 35px 0 15px 0;
+  letter-spacing: 1px;
+}
+
+/* line 343, style.scss */
+#contactBug {
+  font-family: 'Asap', Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  line-height: 22px;
+  color: #0B4F75;
+  padding: 10px 0;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/* line 353, style.scss */
+#home-midR {
+  float: right;
+  width: 670px;
+  height: 278px;
+}
+
+/* line 359, style.scss */
+#content {
+  overflow: hidden;
+}
+
+/* line 363, style.scss */
+#news {
+  width: 290px;
+  float: left;
+}
+
+/* line 368, style.scss */
+#newsHead {
+  height: 42px;
+  width: 290px;
+  background-position: top center;
+  background: url("../img/common/head-news.png");
+  text-align: center;
+  line-height: 44px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+/* line 379, style.scss */
+#newsBody {
+  overflow: hidden;
+  padding: 15px 15px 25px 15px;
+  width: 250px;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 387, style.scss */
+hr {
+  color: #C98B45;
+  background-color: #C98B45;
+  height: 5px;
+  margin: 5px 0;
+  border: 0;
+  width: 100%;
+}
+
+/* line 396, style.scss */
+#bodyMain {
+  width: 645px;
+  float: right;
+  padding: 25px 0 45px 25px;
+  margin: 0px;
+  min-height: 250px;
+}
+
+/* line 404, style.scss */
+#videosHome {
+  float: right;
+  width: 225px;
+  padding: 35px 0 0 0;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 412, style.scss */
+#videoText {
+  padding: 0 0 10px 0;
+  width: 210px;
+}
+
+/* line 417, style.scss */
+footer {
+  overflow: hidden;
+}
+
+/* line 421, style.scss */
+#footerColL {
+  float: left;
+  width: 200px;
+  padding: 0px 25px 0 10px;
+  margin: 35px 0;
+  border-right: 2px solid #666666;
+  color: #cccccc;
+  line-height: 19px;
+  font-size: 13px;
+}
+
+/* line 432, style.scss */
+#footerColC {
+  float: left;
+  width: 200px;
+  padding: 0px 25px 0 50px;
+  margin: 35px 0;
+  border-right: 2px solid #666666;
+  color: #cccccc;
+  line-height: 19px;
+  font-size: 13px;
+}
+
+/* line 443, style.scss */
+#footerColR {
+  float: right;
+  padding: 35px;
+  width: 355px;
+}
+
+/*INTERNAL*/
+/* line 451, style.scss */
+#int-midL {
+  width: 290px;
+  height: 110px;
+  float: left;
+  background-position: top center;
+  background: url("../img/bkgrnd-int-midL.png");
+  text-align: center;
+}
+
+/* line 460, style.scss */
+#int-midR {
+  float: right;
+  width: 670px;
+  height: 110px;
+  background-color: #cccccc;
+}
+
+/* line 467, style.scss */
+#calloutInt {
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  color: #fff;
+  font-weight: lighter;
+  text-shadow: 1px 1px #333333;
+  font-family: 'Asap', Helvetica, Arial, sans-serif;
+  padding: 20px 0;
+  letter-spacing: 1px;
+}
+
+/* line 479, style.scss */
+#contactCont {
+  padding: 15px 0;
+  overflow: hidden;
+}
+
+/* line 484, style.scss */
+#contactL {
+  float: left;
+  width: 300px;
+  padding: 15px 0;
+}
+
+/* line 490, style.scss */
+#contactR {
+  float: right;
+  width: 300px;
+  padding: 15px 0;
+}
+
+/*FONTS*/
+/* line 498, style.scss */
+h1 {
+  color: #0B4F75;
+  font-weight: 400;
+  padding: 0 0 12px 0;
+  margin: 0px;
+  font-size: 25px;
+  line-height: 26px;
+  font-family: 'Asap', Helvetica, Arial, sans-serif;
+}
+
+/* line 508, style.scss */
+h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 0 0 10px 0;
+  color: #0B4F75;
+  font-family: 'Cinzel', serif;
+  margin: 0px;
+  letter-spacing: 1px;
+}
+
+/* line 519, style.scss */
+h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 0 0 10px 0;
+  color: #e6e6e6;
+  margin: 0px;
+  letter-spacing: 1px;
+}
+
+/* line 530, style.scss */
+footer a:link, footer a:active, footer a:visited {
+  color: #809EAC;
+  text-decoration: none;
+}
+/* line 534, style.scss */
+footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 541, style.scss */
+#bodyMain a:link, #bodyMain a:active, #bodyMain a:visited {
+  color: #809EAC;
+  text-decoration: none;
+}
+/* line 545, style.scss */
+#bodyMain a:hover {
+  color: #0B4F75;
+  text-decoration: underline;
+}
+
+/* line 552, style.scss */
+#newsBody a:link, #newsBody a:active, #newsBody a:visited {
+  color: #809EAC;
+  text-decoration: none;
+}
+/* line 556, style.scss */
+#newsBody a:hover {
+  color: #0B4F75;
+  text-decoration: underline;
+}
+
+/* line 562, style.scss */
+form {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 567, style.scss */
+.border {
+  border: 0px;
+  background-color: #fff;
+  padding: 5px;
+  margin: 4px 0;
+  font-family: Arial, Helvetica, Sans Serif;
+  font-size: 90%;
+  color: #666666;
+}
+
+/* line 577, style.scss */
+.go {
+  font-family: Arial, Helvetica, Sans Serif;
+  font-size: 14px;
+  background-color: #1F3963;
+  color: #fff;
+  width: 90px;
+  padding: 5px;
+  margin: 0;
+  border: 0px;
+  text-transform: uppercase;
+}
+
+/* line 589, style.scss */
+.required {
+  color: red;
+}
+
+	/*
+ * jQuery Nivo Slider v2.5.2
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2011, Gilbert Pellegrom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * March 2010
+ */
+/* line 604, style.scss */
+#slider {
+  position: relative;
+  width: 670px;
+  height: 278px;
+  background: url(../img/nivo/loading.gif) no-repeat 50% 50%;
+}
+/* line 609, style.scss */
+#slider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+/* line 615, style.scss */
+#slider a {
+  border: 0;
+  display: block;
+}
+
+/* line 621, style.scss */
+.nivo-controlNav {
+  position: absolute;
+  left: 270px;
+  bottom: -42px;
+  margin: auto;
+  position: absolute;
+  left: 270px;
+  bottom: -42px;
+  margin: auto;
+}
+/* line 630, style.scss */
+.nivo-controlNav a {
+  display: block;
+  width: 22px;
+  height: 22px;
+  text-indent: -9999px;
+  border: 0;
+  margin-right: 3px;
+  float: left;
+}
+/* line 638, style.scss */
+.nivo-controlNav a.active {
+  background-position: 0 -22px;
+}
+
+/* line 644, style.scss */
+.nivo-directionNav a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/nivo/arrows.png) no-repeat;
+  text-indent: -9999px;
+  border: 0;
+}
+
+/* line 654, style.scss */
+a.nivo-nextNav {
+  background-position: -30px 0;
+  right: 15px;
+}
+/* line 658, style.scss */
+a.nivo-prevNav {
+  left: 15px;
+}
+
+/* line 663, style.scss */
+.nivo-caption {
+  text-shadow: none;
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 666, style.scss */
+.nivo-caption a {
+  color: #efe9d1;
+  text-decoration: underline;
+}
+
+/* The Nivo Slider styles */
+/* line 674, style.scss */
+.nivoSlider {
+  position: relative;
+}
+/* line 676, style.scss */
+.nivoSlider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+/* line 681, style.scss */
+.nivoSlider a.nivo-imageLink {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 6;
+  display: none;
+}
+
+/* If an image is wrapped in a link */
+/* The slices and boxes in the Slider */
+/* line 699, style.scss */
+.nivo-slice {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  height: 100%;
+}
+
+/* line 706, style.scss */
+.nivo-box {
+  display: block;
+  position: absolute;
+  z-index: 5;
+}
+
+/* Caption styles */
+/* line 714, style.scss */
+.nivo-caption {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background: #000;
+  color: #fff;
+  opacity: 0.8;
+  /* Overridden by captionOpacity setting */
+  width: 100%;
+  z-index: 8;
+}
+/* line 724, style.scss */
+.nivo-caption p {
+  padding: 5px;
+  margin: 0;
+}
+/* line 728, style.scss */
+.nivo-caption a {
+  display: inline !important;
+}
+
+/* line 733, style.scss */
+.nivo-html-caption {
+  display: none;
+}
+
+/* Direction nav styles (e.g. Next & Prev) */
+/* line 739, style.scss */
+.nivo-directionNav a {
+  position: absolute;
+  top: 45%;
+  z-index: 9;
+  cursor: pointer;
+}
+
+/* line 746, style.scss */
+.nivo-prevNav {
+  left: 0px;
+}
+
+/* line 750, style.scss */
+.nivo-nextNav {
+  right: 0px;
+}
+
+/* Control nav styles (e.g. 1,2,3...) */
+/* line 756, style.scss */
+.nivo-controlNav a {
+  position: relative;
+  z-index: 9;
+  cursor: pointer;
+}
+/* line 760, style.scss */
+.nivo-controlNav a.active {
+  font-weight: bold;
+}
