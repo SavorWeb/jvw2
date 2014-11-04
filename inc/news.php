@@ -5,7 +5,7 @@
                 <div id="newsBody">	
                <?php
 					$XMLFILE = "http://clergyabuse.wordpress.com/feed/";
-					$TEMPLATE = "http://client.savorweb.com/jvw2/files/template.html";
+					$TEMPLATE = "/files/template.html";
 					$MAXITEMS = "1";
 					include("rss2html.php");
 					?>

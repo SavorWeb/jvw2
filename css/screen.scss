@@ -1,7 +1,22 @@
+// ::Imports pre-render. Must be after reset
+// ------------------------------------------------------------
+@import "libs/required";
+@import "libs/reset";
+@import "libs/settings";
+@import "libs/mixins";
+@import "libs/placeholders";
+
+
+/* ::Base styles */
+/* ------------------------------------------------------------ */
+
+
 /*
 	Name: James, Vernon & Weeks
 	Date: October 31st 2014
 */
+
+$max-width: 960px;
 
 html {
   -webkit-text-size-adjust: none;
@@ -35,13 +50,42 @@ figure, section, article {
   padding: 0;
 }
 
+
+ul.acc {
+	margin-left: 0;
+	li {
+		background-color: lighten($secondary, 15%);
+	}
+}
+
+.acc li {
+	list-style-type: none;
+}
+
+.acc li .acc-head {
+	cursor: pointer;
+	position: relative;
+	padding: 20px;
+}
+
+.acc li .acc-head i {
+	position: absolute;
+	top: 22px;
+	right: 15px;
+}
+
+.acc-panel {
+	padding: 0px 20px 10px;
+}
+
 /*HEADER*/
 
 header {
-  height: 120px;
+  height: 350px;
   widthL: 100%;
   margin: auto;
-  background: url("../img/common/bkgrnd-header.png");
+  background: url("../img/church.jpg");
+  background-size: 100%;
   backgroud-color: #000;
   background-repeat: no-repeat;
 }
@@ -75,7 +119,7 @@ header {
 /*HEADER NAV*/
 
 #topNav {
-  width: 960px;
+  width: 100%;
   margin: auto;
 }
 
@@ -95,16 +139,18 @@ nav {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 40px;
   vertical-align: middle;
   height: 40px;
-  background-position: top center;
-  background: url("../img/common/bkgrnd-nav.png");
-  background-repeat: repeat-x;
+  // background-position: top center;
+  // background: url("../img/common/bkgrnd-nav.png");
+  // background-repeat: repeat-x;
+  background-color: white;
   ul {
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
+    width: 960px;
   }
   li {
     margin: 0px;
@@ -140,22 +186,15 @@ nav {
     left: 8px;
     padding: 15px 0;
     z-index: 9999;
-    background: #809eac;
-    /* Old browsers */
-    background: -moz-linear-gradient(left, #809eac 0%, white 21%, white 73%, #809eac 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #809eac), color-stop(21%, white), color-stop(73%, white), color-stop(100%, #809eac));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, #809eac 0%, white 21%, white 73%, #809eac 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, #809eac 0%, white 21%, white 73%, #809eac 100%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, #809eac 0%, white 21%, white 73%, #809eac 100%);
-    /* IE10+ */
-    background: linear-gradient(to right, #809eac 0%, white 21%, white 73%, #809eac 100%);
-    /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#809eac', endColorstr='#809eac',GradientType=1 );
-    /* IE6-9 */
+    // background: #809eac;
+    // background: -moz-linear-gradient(left, #809eac 0%, white 21%, white 73%, #809eac 100%);
+    // background: -webkit-gradient(linear, left top, right top, color-stop(0%, #809eac), color-stop(21%, white), color-stop(73%, white), color-stop(100%, #809eac));
+    // background: -webkit-linear-gradient(left, #809eac 0%, white 21%, white 73%, #809eac 100%);
+    // background: -o-linear-gradient(left, #809eac 0%, white 21%, white 73%, #809eac 100%);
+    // background: -ms-linear-gradient(left, #809eac 0%, white 21%, white 73%, #809eac 100%);
+    // background: linear-gradient(to right, #809eac 0%, white 21%, white 73%, #809eac 100%);
+    // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#809eac', endColorstr='#809eac',GradientType=1 );
+
   }
   .dropdown {
     &:after {
@@ -169,16 +208,18 @@ nav {
     }
   }
   ul {
+
     li:hover > ul {
       display: block;
     }
     ul {
+    	width: auto;
       li {
         float: none;
         padding: 0 2px;
       }
       a {
-        color: #0B4F75;
+        color: #fff;
         border: 0 none;
         font-size: 16px;
         color: #0B4F75;
@@ -198,31 +239,32 @@ nav {
 /* CSS3 */
 
 .borderradius nav {
-  -moz-border-radius: 4px 4px 0 0;
-  -webkit-border-radius: 4px 4px 0 0;
-  border-radius: 4px 4px 0 0;
+  // -moz-border-radius: 4px 4px 0 0;
+  // -webkit-border-radius: 4px 4px 0 0;
+  // border-radius: 4px 4px 0 0;
 }
 
 .cssgradients ul ul nav li:hover {
-  background-image: -moz-linear-gradient(0% 100px 90deg, #999999, #222222);
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#222222), to(#555555));
+  // background-image: -moz-linear-gradient(0% 100px 90deg, #999999, #222222);
+  // background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#222222), to(#555555));
 }
 
 .borderradius nav ul ul {
-  -moz-border-radius-bottomleft: 4px;
-  -moz-border-radius-bottomright: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  -moz-box-shadow: 2px 5px 7px #333;
-  -webkit-box-shadow: 2px 5px 7px #333;
-  box-shadow: 2px 5px 7px #333;
-  border-top: 1px solid #939393;
+  // -moz-border-radius-bottomleft: 4px;
+  // -moz-border-radius-bottomright: 4px;
+  // -webkit-border-bottom-left-radius: 4px;
+  // -webkit-border-bottom-right-radius: 4px;
+  // border-bottom-left-radius: 4px;
+  // border-bottom-right-radius: 4px;
+  // -moz-box-shadow: 2px 5px 7px #333;
+  // -webkit-box-shadow: 2px 5px 7px #333;
+  // box-shadow: 2px 5px 7px #333;
+  // border-top: 1px solid #939393;
 }
 
 .boxshadow.rgba nav ul ul {
-  background-color: #93BECC;
+  //background-color: #93BECC;
+  background-color: white;
 }
 
 .csstransforms ul a span {
@@ -306,7 +348,7 @@ nav {
 /*COMMON*/
 
 .baseWidth {
-  width: 960px;
+  width: $max-width;
   margin: auto;
 }
 
@@ -315,7 +357,7 @@ nav {
 }
 
 #whiteWrap {
-  background-color: #fff;
+  background-color: #A5B1B5;
   overflow: hidden;
 }
 
@@ -358,6 +400,11 @@ nav {
 
 #content {
   overflow: hidden;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 #news {
@@ -760,4 +807,80 @@ a {
   &.active {
     font-weight: bold;
   }
+}
+
+
+/* ::Import styles */
+/* ------------------------------------------------------------ */
+
+
+@include grid;	// Include the grid mixin
+
+// ------------------------------------------------------------
+
+
+// Standard row
+// Rows should contain columns as children
+// You can use multiple grid denominations within each breakpoint, but each breakpoint must have unique column set-up
+// For example, you can have a 6 and 8 column grid at breakpoint b, but you can't use 6 or eight columns in other breakpoints
+.row {
+	@extend %pie-clearfix;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: $internal-spacing/2; 	// Narrower for smaller screens
+	padding-right: $internal-spacing/2;	// Narrower for smaller screens
+	@include break($b, $IE9: false) { 
+		min-width: $b;
+		@include grid_columns(2); 	// Two column grid
+	}
+	@include break($c, $IE9: false) { 
+		padding-left: $internal-spacing;
+		padding-right: $internal-spacing;
+		min-width: $c;
+		@include grid_columns(6);	// Six column grid
+	}
+	@include break($d, $IE9: false) { 
+		min-width: $d;
+		@include grid_columns(8);	// Eight column grid
+	}
+	@include break($e, $IE9: false) { 
+		min-width: $e;
+		@include grid_columns(12);	// Twelve column grid
+	}
+	@include break($max, $IE9: false) { 
+		width: $max;
+	}
+	// IE less than 9 
+	.lt-ie9 & {
+		@include grid_columns(12);	// Twelve column grid
+		width: $ie-fixed;
+	}
+}
+
+// Drag row left to allow for equal spaced grid. AKA gutters
+// Gutters set in mixins.scss file
+.gutter-grid {
+	position: relative;
+	@extend %pie-clearfix;
+	@include break($start-columns) {			
+		min-width: (100% + $internal-spacing-percent); 	
+		left: -$internal-spacing-percent; 	
+	}
+	.lt-ie9 & { 
+		max-width: 100%; 
+		min-width: auto; 
+		left: auto; 
+	}
+}
+
+
+/* ::Print */
+/* ------------------------------------------------------------ */
+
+@media print {
+	body {
+		@include adjust-leading-to(2);
+		font-size: percentage(10 / 16);
+	}
 }

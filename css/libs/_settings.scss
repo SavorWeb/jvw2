@@ -1,0 +1,96 @@
+// ------------------------------------------------------------
+// Settings
+
+// :: Breakpoints
+// :: Colour
+// :: Typography
+// :: Borders
+// :: Spacing
+// ------------------------------------------------------------
+
+
+// ------------------------------------------------------------
+// :: Breakpoints
+// ------------------------------------------------------------
+
+// a-z viewports. Place where design should change, not always on device widths
+
+$a								: 300px;	// first viewport 
+$b								: 420px;	// up one
+$c								: 600px;	// up two
+$d								: 960px;	// up three
+$e								: 960px;	// up four
+$f								: 960px;	// up five
+$ie-fixed						: 960px;    // Viewport for IE fixed width
+
+$max 							: $d; 	// max viewport. Syntactically makes for a nicer option
+
+
+// At some point, you'll want to switch from a one column view to multi-column.
+// This variable is used in the grid to dictate when you make that switch
+$start-columns 						: $b;
+
+
+// ------------------------------------------------------------
+// :: Color
+// ------------------------------------------------------------
+
+$pos: #fff;
+$neg: #000;
+
+$primary 							: #aa0022;
+$secondary							: #bbb;
+
+
+$body-color 						: #fff;
+$base-color							: #777;
+$heading-color						: #333;
+$hightlight-color 					: #a8d9f4;
+
+$action								: $primary;
+$action-respond						: lighten($primary, 10%);
+
+
+// ------------------------------------------------------------
+// :: Typesizes/scale
+// ------------------------------------------------------------
+
+$s1   	: 42px;
+$s2		: 32px;
+$s3		: 28px;
+$s4		: 26px;
+$s5		: 24px;
+$s6		: 20px;
+$s7		: 18px;
+$s8		: 15px;
+$s9 	: 14px;
+$s10 	: 12px;
+$s11 	: 10px;
+$s12 	: 8px;
+
+
+$para		: $s10; 	// Paragraph size
+$quote		: $s3;	// Quote size
+
+
+
+// ------------------------------------------------------------
+// :: Border widths
+// ------------------------------------------------------------
+
+$border-width 				: 1px; 
+
+
+// ------------------------------------------------------------
+// :: Grid variables
+// ------------------------------------------------------------
+
+$internal-spacing-percent 			: 3%;		// Used by grid system
+$internal-spacing					: 40px; 	// Space internally with fixed measure
+
+
+
+// ------------------------------------------------------------	
+// Add functional stuff 
+// ------------------------------------------------------------	
+@import "functions/functions";

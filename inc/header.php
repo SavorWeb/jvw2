@@ -9,12 +9,13 @@
                 </div>
             </div><!--topSplit-->
             
-            <nav id="topNav">
-            	<ul>
+        </header>
+                            <nav id="topNav">
+                <ul class="clearfix">
                     <li><a href="/jvw2/" title="Home">Home</a></li>
                     <li><a href="/jvw2/our-sexual-abuse-lawyers" title="Our Firm">Our Firm</a></li>
                     <li class="dropdown"><a href="/jvw2/helping-sexual-abuse-survivors" title="Helping Survivors">Helping Survivors </a>
-                   		<ul>
+                        <ul>
                             <li><a href="/jvw2/affects-sexual-abuse" title="Link 2">Affects of Sexual Abuse</a></li>
                             <li><a href="/jvw2/fight-back-against-sexual-abuse" title="Link 3">How You Can Fight Back</a></li>
                             <li><a href="/jvw2/frequent-sexual-abuse-questions" title="Link 4">Frequent Questions</a></li>
@@ -27,4 +28,3 @@
                     <li><a href="/jvw2/contact-our-sexual-abuse-lawyers" title="Contact Us">Contact Us</a></li>
                 </ul>
             </nav>
-        </header>

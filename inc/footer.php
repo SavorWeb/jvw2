@@ -44,7 +44,7 @@
                           </tr>
                           <tr>
                             <td align="left" valign="top">
-                            <input type="image" src="http://client.savorweb.com/jvw2/img/common/submit.png" alt="Submit" style="padding: 5px 0 0 0">
+                            <input type="image" src="img/common/submit.png" alt="Submit" style="padding: 5px 0 0 0">
                             </td>
                           </tr>
                         </table></td>
@@ -54,6 +54,6 @@
                     </table>
 			  </form>
             </div>
-        <script src="/js/modernizr.js"></script>
+        <script src="js/modernizr.js"></script>
         </footer>
         

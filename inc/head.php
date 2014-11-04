@@ -1,7 +1,7 @@
 <link rel="shortcut icon" href="favicon.ico">
 <link href='http://fonts.googleapis.com/css?family=Cinzel:400,700,900' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/screen.css" rel="stylesheet" type="text/css" />
 
 <meta charset="UTF-8">
 
