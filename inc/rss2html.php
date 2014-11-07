@@ -26,13 +26,13 @@ $useFopenURL = 0;
 // If XLMFILE is passed as part of the URL, XMLFILE=, then it will be used
 // otherwise the the file below is used.
 //$XMLfilename = "http://examlple.com/sample.xml";
-$XMLfilename = "http://client.savorweb.com/jvw2/files/sample-template.html";
+$XMLfilename = "files/sample-template.html";
 
 //
 // If TEMPLATE is passed as part of the URL. TEMPLATE=, then it will be used
 // otherwise the the file below is used.
 //$TEMPLATEfilename = "http://examlple.com/sample-template.html";
-$TEMPLATEfilename = "http://client.savorweb.com/jvw2/files/sample-template.html";
+$TEMPLATEfilename = "files/sample-template.html";
 
 //
 // Since some feeds may have titles or descriptins in the feed or items that

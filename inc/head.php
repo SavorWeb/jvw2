@@ -4,6 +4,8 @@
 <link href="css/screen.css" rel="stylesheet" type="text/css" />
 
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="initial-scale=1, user-scalable=no">
 
 <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 

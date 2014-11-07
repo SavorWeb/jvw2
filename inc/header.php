@@ -1,16 +1,18 @@
 		<header>
-        	<div id="topSplit" class="baseWidth">
+        	<div id="topSplit" class="row">
             	<div id="logoCont">
-                	<img src="/jvw2/img/common/logo.png" alt="James, Vernon & Weeks">
+                	<img class="responsive-img" src="/jvw2/img/common/logo.png" alt="James, Vernon & Weeks">
                 </div>
                 
                 <div id="phone">
-                    Confidential Sexual Abuse Attorneys<br /><strong>Toll Free 866.667.0683</strong>
+                    Confidential Sexual Abuse Attorneys<br /><strong><a href="tel:8666670683">Toll Free 866.667.0683</a></strong>
                 </div>
             </div><!--topSplit-->
             
         </header>
-                            <nav id="topNav">
+        <div class="whitebg">
+<div class="row">
+                <nav id="topNav">
                 <ul class="clearfix">
                     <li><a href="/jvw2/" title="Home">Home</a></li>
                     <li><a href="/jvw2/our-sexual-abuse-lawyers" title="Our Firm">Our Firm</a></li>
@@ -22,9 +24,11 @@
                             <li class="last"><a href="/jvw2/prevent-child-abuse" title="Link 5">Stand Against Sexual Abuse</a></li>
                         </ul>
                     </li>   
-                    <li><a href="/jvw2/sexual-abuse-videos-media" title="Videos / Media">Videos /Media</a></li>
-                    <li><a href="/jvw2/child-abuse-resources" title="Resources">Resources</a></li>
+                    <li><a href="/jvw2/sexual-abuse-videos-media" title="Videos / Media">Media</a></li>
                     <li><a href="http://clergyabuse.wordpress.com" title="BLOG">BLOG</a></li>
+                    <li><a href="/jvw2/child-abuse-resources" title="Resources">Resources</a></li>
                     <li><a href="/jvw2/contact-our-sexual-abuse-lawyers" title="Contact Us">Contact Us</a></li>
                 </ul>
             </nav>
+</div>
+</div>

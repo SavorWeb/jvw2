@@ -12,15 +12,11 @@
     <div id="whiteWrap">
    	<?php include("inc/mid.php"); ?> 
 
-            <section id="content" class="baseWidth">
-                <div id="news">
-                    
-                    <?php include("inc/news.php"); ?> 
-                    
-                </div>
-                
-                <div id="bodyMain">
+            <section id="content" class="row">
+           <div class="gutter-grid">
+            <div class="as-grid with-gutter colspan12-8 colspan6-4 colspan2-2">
                     <h1>Frequent Questions</h1>            
+                    <p class="typeset">
                     <strong>Is my call confidential?</strong> <br>
                     Yes. We realize it is difficult to reach out for help. Some of our clients have reached out to us before they have shared their history of abuse with close friends or family members. We realize these are difficult matters to discuss, and we are here to help. We are pleased to offer a free and confidential consultation to answer your questions and help you understand your rights.
                     <br><br>
@@ -29,7 +25,14 @@
                     <br><br>
                     <strong>Do I qualify to file Suit?</strong> <br>
                     Each potential case is different with different facts.  Your situation must be evaluated carefully before any legal advice can be given.
+                    </p>
                 </div><!--bodyMain-int-->
+                     <div class="as-grid with-gutter colspan12-4 colspan6-2 colspan2-2">
+                    
+                    <?php include("inc/news.php"); ?> 
+                    
+                </div>
+            </div>
             </section><!--content-->
         </div>
         

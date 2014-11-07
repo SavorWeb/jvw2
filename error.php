@@ -22,7 +22,8 @@
                 
                 <div id="bodyMain">
                 <h1>Error</h1>
-                Be sure to leave your email / phone number so we can contact you. 
+                <p class="typeset">
+                Be sure to leave your email / phone number so we can contact you. </p>
                 </div><!--bodyMain-int-->
             </section><!--content-->
         </div>

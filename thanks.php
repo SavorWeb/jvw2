@@ -19,7 +19,7 @@
                 
                 <div id="bodyMain">
                 <h1>Thank You</h1>
-                We'll be contacting you confidentially regarding your inquiry.
+                <p class="typeset">We'll be contacting you confidentially regarding your inquiry.</p>
                 </div><!--bodyMain-int-->
             </section><!--content-->
         </div>

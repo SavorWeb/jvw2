@@ -1,33 +1,28 @@
-<HTML>
-    <HEAD>
+<html>
+    <head>
         <meta http-equiv="content-type" content="text/html;charset=utf-8">
-        <TITLE>
+        <title>
             ~~~FeedTitle~~~
-        </TITLE>
-    </HEAD>
-    <BODY>
-        <H1>~~~FeedTitle~~~</H1>
-        <H2>~~~FeedDescription~~~</H2>
-        <BR>
-        <TABLE width="100%">
-            ~~~BeginItemsRecord~~~
-            <TR>
-                <TD>
-                    ~~~ItemPubShortDate~~~ ~~~ItemPubShortTime~~~
-                </TD>
-            </TR>
-            <TR>
-                <TD>
-                    <B><A href="~~~ItemLink~~~">~~~ItemTitle~~~</A></B>
-                </TD>
-            </TR>
-            <TR>
-                <TD>
-                    ~~~ItemDescription~~~
-                    <BR>
-                </TD>
-            </TR>
-            ~~~EndItemsRecord~~~
-        </TABLE>
-    </BODY>
-</HTML>
+        </title>
+    </head>
+    <body>
+        <h1>~~~FeedTitle~~~</h1>
+        <h2>~~~FeedDescription~~~</h2>
+        <br>
+        <div>
+~~~BeginItemsRecord~~~
+<ul class="acc">    
+    <li>
+      <div class="acc-head">~~~ItemTitle~~~<i class="fa fa-chevron-down acc-plus fa-fw"></i><i class="fa fa-chevron-up acc-minus fa-fw"></i></div>
+      <div class="acc-panel">
+        <small>~~~ItemPubShortDate~~~ ~~~ItemPubShortTime~~~</small>
+        <p>~~~ItemDescription~~~</p>
+      </div>
+    </li>
+</ul>
+~~~EndItemsRecord~~~
+        </div>
+    </body>
+</html>
+
+

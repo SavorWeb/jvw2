@@ -12,15 +12,11 @@
     <div id="whiteWrap">
    	<?php include("inc/mid.php"); ?> 
     
-            <section id="content" class="baseWidth">
-                <div id="news">
-                    
-                    <?php include("inc/news.php"); ?> 
-                    
-                </div>
-                
-                <div id="bodyMain">
+            <section id="content" class="row">
+           <div class="gutter-grid">
+            <div class="as-grid with-gutter colspan12-8 colspan6-4 colspan2-2">
                 <h1>Our Team Taking Action</h1>
+                <p class="typeset">
                 Sexual abuse thrives in secrecy and silence. While many survivors want to maintain privacy during this process there are others who find speaking out helps in the healing process.   When our brave clients speak out and reveal what happened to them and inform the general public, kids are protected. 
                 <br><br>
                 The media is particularly crucial to the advancement of our cause to protect children.  Through press conferences, media statements, and television interviews, we can shine a light on the evil deeds that are done in the dark.  Members of the media often contact our attorneys to offer comment on various issues surrounding sexual abuse, rape, and sexual exploitation.  
@@ -106,7 +102,16 @@
                 
                 <strong>The Henderson Independent Print Edition and Facebook page</strong> / <em>06.26.13</em><br>
                 <a href="https://www.facebook.com/HendersonIndependent?rf=146798592010689" target="_blank">Read article...</a>
+                </p>
+
                 </div><!--bodyMain-int-->
+                
+              <div class="as-grid with-gutter colspan12-4 colspan6-2 colspan2-2">
+                    
+                    <?php include("inc/news.php"); ?> 
+                    
+                </div>
+                </div>
             </section><!--content-->
         </div>
         
