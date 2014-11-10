@@ -38,13 +38,12 @@ $start-columns 						: $b;
 $pos: #fff;
 $neg: #000;
 
-$primary 							: #aa0022;
-$secondary							: #bbb;
-
-
 $blue : #0B4F75;
 $orange: #DB652F;
 $grey : #A5B1B5;
+
+$primary 							: $blue;
+$secondary							: $orange;
 
 $body-color 						: #fff;
 $base-color							: #777;

@@ -16,15 +16,16 @@
             	<link rel="stylesheet" href="css/ie.css">
                 <![endif]-->
             </noscript>
+            <div class="remodal-bg">
             <?php include("inc/header.php"); ?> 
 
             <div id="whiteWrap">
-            <div id="content">
+            <div class="content">
                 <section class="row">
                     <div class="gutter-grid">
-                        <div class="colspan12-7 as-grid with-gutter">
-                            <h1 class="center">Serving victims of sexual abuse <span>and clergy abuse throughout the United States.</span></h1>
-                            <p class="typeset">
+                        <div id="cms-area" class="typeset editable colspan12-7 as-grid with-gutter">
+                            <h1>Serving victims of sexual abuse <span>and clergy abuse throughout the United States.</span></h1>
+                            <p>
                             At James, Vernon & Weeks, P.A. we are committed to standing up for the rights of survivors of childhood sexual abuse and offer confidential, passionate, yet aggressive legal representation. Leander L. James and Craig K. Vernon are dedicated to the legal battle against childhood sexual abuse.   
                             <br><br>
                             <strong>Sex abuse thrives in secrecy.</strong> <br>
@@ -39,21 +40,21 @@
                             </p>
                         </div>
                         <div class="colspan12-5 as-grid with-gutter">
-                            <h2 class="center attor-heading">Meet our Attorneys</h2>
-                            
-                            <div class="attor clearfix">
-                                <figure class="left"><img src="img/lee.jpg" alt=""></figure>
-                                <h3>Leander L. James</h3>
-                                <p class="typeset">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, error dolor, tempora, pariatur sequi in ea dolore suscipit obcaecati quidem libero?</p>
-                                <a class="btn" href="#">Read More</a>
+                            <h2 id="heading-edit" class="editable attor-heading">Meet our Attorneys</h2>
+                            <div class="editable" id="attor-edits">
+                                <div class="typeset repeatable attor clearfix">
+                                    <figure class="right"><img src="img/lee.jpg" alt=""></figure>
+                                    <h3>Leander L. James</h3>
+                                    <p>Leander James is a founding shareholder of the firm. He has extensive experience in civil trial work, achieving large settlements and verdicts. He represents sexual abuse survivors, the catastrophically injured and business and property owners in serious disputes.</p>
+                                    <a class="btn" href="lee">Read More</a>
+                                </div>
+                                <div class="typeset repeatable attor clearfix">
+                                    <figure class="right"><img src="img/craig.jpg" alt=""></figure>
+                                    <h3>Craig K. Vernon</h3>
+                                    <p>Craig Vernon is at Shareholder at James, Vernon & Weeks, P.A., where he takes an active role in managing the Firm. He has extensive experience in civil litigation, obtaining high-end settlements and verdicts. Mr. Vernon was raised and educated in Idaho.</p>
+                                    <a class="btn" href="craig">Read More</a>
+                                </div>
                             </div>
-                            <div class="attor clearfix">
-                                <figure class="right"><img src="img/craig.jpg" alt=""></figure>
-                                <h3>Craig K. Vernon</h3>
-                                <p class="typeset">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, error dolor, tempora, pariatur sequi in ea dolore suscipit obcaecati quidem libero?</p>
-                                <a class="btn" href="#">Read More</a>
-                            </div>
-
                         </div>
                     </div>
                 </section>
@@ -66,7 +67,7 @@
 
                         </div>
                         <div class="colspan12-5 as-grid with-gutter">
-                            <h2 class="center">Our Media</h2>
+                            <h2 class="editable" id="col1-headline">Our Media</h2>
                             <div class="video">
                                 <div class='embed-container'><iframe src='http://www.youtube.com/embed/rRs5niNCGLo' frameborder='0' allowfullscreen></iframe></div>
                             </div>
@@ -81,5 +82,6 @@
 
 
             <?php include("inc/footer.php"); ?> 	
+        </div>
         </body>
         </html>

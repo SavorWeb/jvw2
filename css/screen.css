@@ -165,7 +165,7 @@ figure, section, article {
 }
 
 /* line 62, screen.scss */
-.clearfix:after {
+.clearfix:after, .acc-panel:after {
   visibility: hidden;
   display: block;
   font-size: 0;
@@ -175,18 +175,18 @@ figure, section, article {
 }
 
 /* line 70, screen.scss */
-.clearfix {
+.clearfix, .acc-panel {
   display: inline-block;
 }
 
 /* start commented backslash hack \*/
 /* line 72, screen.scss */
-* html .clearfix {
+* html .clearfix, * html .acc-panel {
   height: 1%;
 }
 
 /* line 73, screen.scss */
-.clearfix {
+.clearfix, .acc-panel {
   display: block;
 }
 
@@ -275,31 +275,52 @@ header {
   color: #0f6ea4;
 }
 
-/*HEADER NAV*/
+/* line 134, screen.scss */
+.feat-video {
+  position: relative;
+  top: 220px;
+}
 /* line 137, screen.scss */
+.feat-video button {
+  font-family: 'Asap', Helvetica, Arial, sans-serif;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 0;
+  background-color: #0b4f75;
+}
+/* line 145, screen.scss */
+.feat-video button:hover {
+  background-color: #db652f;
+  color: #fff;
+}
+
+/*HEADER NAV*/
+/* line 154, screen.scss */
 #topNav {
   width: 100%;
   margin: auto;
 }
 
-/* line 142, screen.scss */
+/* line 159, screen.scss */
 .responsive-img {
   max-width: 100%;
 }
 
 /* JS disabled styles */
-/* line 148, screen.scss */
+/* line 165, screen.scss */
 .no-js nav li:hover ul {
   display: block;
 }
 
 /* base nav styles */
-/* line 154, screen.scss */
+/* line 171, screen.scss */
 .whitebg {
   background-color: white;
 }
 
-/* line 158, screen.scss */
+/* line 175, screen.scss */
 nav {
   display: block;
   font-family: 'Asap', Helvetica, Arial, sans-serif;
@@ -313,12 +334,12 @@ nav {
   height: 40px;
   background-color: white;
 }
-/* line 174, screen.scss */
+/* line 191, screen.scss */
 nav ul {
   list-style: none;
   margin: 0 auto;
 }
-/* line 178, screen.scss */
+/* line 195, screen.scss */
 nav li {
   margin: 0px;
   padding: 0 14px;
@@ -326,18 +347,18 @@ nav li {
   float: left;
   list-style-type: none;
 }
-/* line 181, screen.scss */
+/* line 198, screen.scss */
 nav li:first-of-type {
   padding-left: 0;
 }
-/* line 188, screen.scss */
+/* line 205, screen.scss */
 nav ul:after {
   display: block;
   height: 0;
   clear: both;
   visibility: hidden;
 }
-/* line 194, screen.scss */
+/* line 211, screen.scss */
 nav li a {
   display: block;
   font-size: 15px;
@@ -346,17 +367,17 @@ nav li a {
   text-align: left;
   white-space: nowrap;
 }
-/* line 201, screen.scss */
+/* line 218, screen.scss */
 nav li a:hover {
   text-decoration: none;
   color: #db652f;
 }
-/* line 205, screen.scss */
+/* line 222, screen.scss */
 nav li a:focus {
   outline: none;
   text-decoration: none;
 }
-/* line 210, screen.scss */
+/* line 227, screen.scss */
 nav ul ul {
   display: none;
   position: absolute;
@@ -364,30 +385,30 @@ nav ul ul {
   padding: 15px 0;
   z-index: 9999;
 }
-/* line 227, screen.scss */
+/* line 244, screen.scss */
 nav .dropdown:after {
   position: absolute;
   top: 2px;
   right: 0;
 }
-/* line 233, screen.scss */
+/* line 250, screen.scss */
 nav .dropdown:hover:after {
   color: #db652f;
 }
-/* line 239, screen.scss */
+/* line 256, screen.scss */
 nav ul li:hover > ul {
   display: block;
 }
-/* line 242, screen.scss */
+/* line 259, screen.scss */
 nav ul ul {
   width: auto;
 }
-/* line 244, screen.scss */
+/* line 261, screen.scss */
 nav ul ul li {
   float: none;
   padding: 0 2px;
 }
-/* line 248, screen.scss */
+/* line 265, screen.scss */
 nav ul ul a {
   color: #fff;
   border: 0 none;
@@ -399,91 +420,91 @@ nav ul ul a {
   letter-spacing: 0px;
   font-weight: 400;
 }
-/* line 258, screen.scss */
+/* line 275, screen.scss */
 nav ul ul a:hover {
   color: #db652f;
 }
 
 /* CSS3 */
-/* line 292, screen.scss */
+/* line 309, screen.scss */
 .boxshadow.rgba nav ul ul {
   background-color: #ddd;
 }
 
-/* line 297, screen.scss */
+/* line 314, screen.scss */
 .csstransforms ul a span {
   -moz-transform: rotate(-180deg);
   -webkit-transform: rotate(-180deg);
 }
 
 /* fallbacks */
-/* line 304, screen.scss */
+/* line 321, screen.scss */
 .no-cssgradients nav, .no-js nav {
   padding-bottom: 4px;
   border: none;
   background: url(../fallback/navBG.gif) repeat-x 0 0;
 }
 
-/* line 310, screen.scss */
+/* line 327, screen.scss */
 .no-borderradius nav ul, .no-js nav ul {
   background: url(../fallback/navRight.gif) no-repeat 100% 0;
 }
 
-/* line 314, screen.scss */
+/* line 331, screen.scss */
 .no-borderradius nav ul ul, .no-js nav ul ul {
   background: none;
 }
 
-/* line 318, screen.scss */
+/* line 335, screen.scss */
 .no-borderradius nav li, .no-js nav li {
   height: 44px;
 }
 
-/* line 322, screen.scss */
+/* line 339, screen.scss */
 .no-cssgradients nav li:hover, .no-js nav li:hover {
   background: url(../fallback/navOverBG.gif) repeat-x 0 0;
 }
 
-/* line 326, screen.scss */
+/* line 343, screen.scss */
 .no-borderradius nav li li, .no-js nav li li {
   height: auto;
   width: 98%;
   left: -2px;
 }
 
-/* line 332, screen.scss */
+/* line 349, screen.scss */
 .no-borderradius nav li:first-child, .no-js nav li:first-child {
   background: url(../fallback/navLeft.gif) no-repeat 0 0;
 }
 
-/* line 336, screen.scss */
+/* line 353, screen.scss */
 .no-borderradius nav li:first-child:hover, .no-js nav li:first-child:hover {
   background: url(../fallback/navOverLeft.gif) no-repeat 0 0;
 }
 
-/* line 340, screen.scss */
+/* line 357, screen.scss */
 .no-borderradius nav li li:first-child, .no-js nav li li:first-child {
   background: none;
 }
 
-/* line 344, screen.scss */
+/* line 361, screen.scss */
 .no-rgba nav ul ul, .no-js nav ul ul {
   left: 1px;
   padding-left: 2px;
   background: url(../fallback/subnavBG.png) no-repeat 100% 100%;
 }
 
-/* line 350, screen.scss */
+/* line 367, screen.scss */
 .no-rgba nav ul ul a, .no-js nav ul ul a {
   left: 3px;
 }
 
-/* line 354, screen.scss */
+/* line 371, screen.scss */
 .no-rgba nav ul ul a:hover {
   background: url(../fallback/subOverBG.png) repeat 0 0;
 }
 
-/* line 358, screen.scss */
+/* line 375, screen.scss */
 .no-csstransforms ul a span {
   height: 7px;
   width: 12px;
@@ -493,36 +514,36 @@ nav ul ul a:hover {
   background: url(../fallback/indicator.png) no-repeat 0 0;
 }
 
-/* line 367, screen.scss */
+/* line 384, screen.scss */
 .no-borderradius ul ul li.last {
   margin-bottom: 10px;
 }
 
-/* line 371, screen.scss */
+/* line 388, screen.scss */
 .no-cssgradients.boxshadow nav {
   box-shadow: none;
 }
 
 /*COMMON*/
-/* line 377, screen.scss */
+/* line 394, screen.scss */
 .baseWidth {
   width: 960px;
   margin: auto;
 }
 
-/* line 382, screen.scss */
+/* line 399, screen.scss */
 #base {
   overflow: hidden;
   display: none;
 }
 
-/* line 387, screen.scss */
+/* line 404, screen.scss */
 #whiteWrap {
   background-color: #A5B1B5;
   overflow: hidden;
 }
 
-/* line 392, screen.scss */
+/* line 409, screen.scss */
 #home-midL {
   width: 290px;
   height: 278px;
@@ -532,7 +553,7 @@ nav ul ul a:hover {
   text-align: center;
 }
 
-/* line 401, screen.scss */
+/* line 418, screen.scss */
 #calloutHome {
   font-size: 25px;
   line-height: 25px;
@@ -545,7 +566,7 @@ nav ul ul a:hover {
   letter-spacing: 1px;
 }
 
-/* line 413, screen.scss */
+/* line 430, screen.scss */
 #contactBug {
   font-family: 'Asap', Helvetica, Arial, sans-serif;
   font-size: 19px;
@@ -556,49 +577,54 @@ nav ul ul a:hover {
   letter-spacing: 1px;
 }
 
-/* line 423, screen.scss */
+/* line 440, screen.scss */
 #home-midR {
   float: right;
   width: 670px;
   height: 278px;
 }
 
-/* line 429, screen.scss */
-#content {
+/* line 446, screen.scss */
+#content, .content {
   overflow: hidden;
   max-width: 960px;
   margin: 0 auto;
   background-color: white;
   box-sizing: border-box;
 }
-/* line 437, screen.scss */
-#content ul {
+/* line 454, screen.scss */
+#content ul, .content ul {
   padding-left: 15px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
-/* line 441, screen.scss */
-#content ul li {
+/* line 458, screen.scss */
+#content ul li, .content ul li {
   margin-bottom: 5px;
 }
 
-/* line 447, screen.scss */
+/* line 466, screen.scss */
+article {
+  margin-bottom: 30px;
+}
+
+/* line 470, screen.scss */
 section.row {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-/* line 450, screen.scss */
+/* line 473, screen.scss */
 section.row:first-of-type {
   padding-top: 40px;
 }
 
-/* line 455, screen.scss */
+/* line 478, screen.scss */
 #news {
   width: 290px;
   float: left;
 }
 
-/* line 460, screen.scss */
+/* line 483, screen.scss */
 #newsHead {
   height: 42px;
   width: 100%;
@@ -615,13 +641,13 @@ section.row:first-of-type {
   margin-top: 0;
 }
 @media screen and (min-width: 600px) {
-  /* line 460, screen.scss */
+  /* line 483, screen.scss */
   #newsHead {
     margin-top: 0;
   }
 }
 
-/* line 476, screen.scss */
+/* line 499, screen.scss */
 #newsBody {
   overflow: hidden;
   width: 100%;
@@ -629,7 +655,7 @@ section.row:first-of-type {
   line-height: 18px;
 }
 
-/* line 484, screen.scss */
+/* line 507, screen.scss */
 hr {
   color: #db652f;
   background-color: #db652f;
@@ -639,7 +665,7 @@ hr {
   width: 100%;
 }
 
-/* line 493, screen.scss */
+/* line 516, screen.scss */
 #bodyMain {
   width: 670px;
   float: right;
@@ -648,7 +674,7 @@ hr {
   min-height: 250px;
 }
 
-/* line 501, screen.scss */
+/* line 524, screen.scss */
 #videosHome {
   float: right;
   width: 225px;
@@ -657,17 +683,17 @@ hr {
   line-height: 18px;
 }
 
-/* line 509, screen.scss */
+/* line 532, screen.scss */
 #videoText {
   padding: 0 0 10px 0;
   width: 210px;
 }
 
-/* line 514, screen.scss */
+/* line 537, screen.scss */
 footer {
   overflow: hidden;
 }
-/* line 516, screen.scss */
+/* line 539, screen.scss */
 footer .as-grid {
   margin-top: 15px;
 }
@@ -676,24 +702,24 @@ footer .as-grid {
   margin-top: 0;
 }
 @media screen and (min-width: 600px) {
-  /* line 516, screen.scss */
+  /* line 539, screen.scss */
   footer .as-grid {
     margin-top: 0;
   }
 }
 
-/* line 524, screen.scss */
+/* line 547, screen.scss */
 .padding {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-/* line 529, screen.scss */
+/* line 552, screen.scss */
 .contact-us {
   color: #ccc;
 }
 
-/* line 533, screen.scss */
+/* line 556, screen.scss */
 #footerColL {
   float: left;
   width: 200px;
@@ -705,7 +731,7 @@ footer .as-grid {
   font-size: 13px;
 }
 
-/* line 544, screen.scss */
+/* line 567, screen.scss */
 #footerColC {
   float: left;
   width: 200px;
@@ -717,7 +743,7 @@ footer .as-grid {
   font-size: 13px;
 }
 
-/* line 555, screen.scss */
+/* line 578, screen.scss */
 #footerColR {
   float: right;
   padding: 35px;
@@ -725,7 +751,7 @@ footer .as-grid {
 }
 
 /*INTERNAL*/
-/* line 563, screen.scss */
+/* line 586, screen.scss */
 #int-midL {
   width: 290px;
   height: 110px;
@@ -735,7 +761,7 @@ footer .as-grid {
   text-align: center;
 }
 
-/* line 572, screen.scss */
+/* line 595, screen.scss */
 #int-midR {
   float: right;
   width: 670px;
@@ -743,7 +769,7 @@ footer .as-grid {
   background-color: #cccccc;
 }
 
-/* line 579, screen.scss */
+/* line 602, screen.scss */
 #calloutInt {
   font-size: 22px;
   line-height: 22px;
@@ -756,45 +782,49 @@ footer .as-grid {
   letter-spacing: 1px;
 }
 
-/* line 591, screen.scss */
+/* line 614, screen.scss */
 #contactCont {
   padding: 15px 0;
   overflow: hidden;
 }
 
-/* line 596, screen.scss */
+/* line 619, screen.scss */
 #contactL, #contactR {
   width: 49%;
 }
 
-/* line 600, screen.scss */
+/* line 623, screen.scss */
 #contactL {
   float: left;
   padding: 15px 0;
 }
 
-/* line 605, screen.scss */
+/* line 628, screen.scss */
 #contactR {
   float: right;
   padding: 15px 0;
 }
 
-/* line 610, screen.scss */
+/* line 633, screen.scss */
 .center {
   text-align: center;
 }
 
 /*FONTS*/
-/* line 616, screen.scss */
+/* line 639, screen.scss */
 .typeset {
   font-size: 12px;
 }
-/* line 618, screen.scss */
+/* line 641, screen.scss */
+.typeset p {
+  font-size: 12px;
+}
+/* line 642, screen.scss */
 .typeset strong {
   font-weight: bold;
 }
 
-/* line 623, screen.scss */
+/* line 647, screen.scss */
 h1 {
   color: #0b4f75;
   font-weight: 400;
@@ -810,7 +840,7 @@ h1 {
   font-size: 30px;
 }
 @media screen and (min-width: 960px) {
-  /* line 623, screen.scss */
+  /* line 647, screen.scss */
   h1 {
     font-size: 30px;
   }
@@ -822,7 +852,7 @@ h1 {
   font-size: 19px;
 }
 @media screen and (min-width: 960px) {
-  /* line 635, screen.scss */
+  /* line 659, screen.scss */
   h1 span {
     display: block;
     clear: both;
@@ -830,7 +860,7 @@ h1 {
   }
 }
 
-/* line 644, screen.scss */
+/* line 668, screen.scss */
 h2 {
   text-transform: uppercase;
   font-weight: 400;
@@ -846,13 +876,13 @@ h2 {
   font-size: 31px;
 }
 @media screen and (min-width: 960px) {
-  /* line 644, screen.scss */
+  /* line 668, screen.scss */
   h2 {
     font-size: 31px;
   }
 }
 
-/* line 658, screen.scss */
+/* line 682, screen.scss */
 h3 {
   text-transform: uppercase;
   font-weight: normal;
@@ -863,45 +893,45 @@ h3 {
   letter-spacing: 1px;
 }
 
-/* line 669, screen.scss */
+/* line 693, screen.scss */
 footer a:link, footer a:active, footer a:visited {
   color: #809EAC;
   text-decoration: none;
 }
-/* line 673, screen.scss */
+/* line 697, screen.scss */
 footer a:hover {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 680, screen.scss */
+/* line 704, screen.scss */
 #bodyMain a:link, #bodyMain a:active, #bodyMain a:visited {
   color: #809EAC;
   text-decoration: none;
 }
-/* line 684, screen.scss */
+/* line 708, screen.scss */
 #bodyMain a:hover {
   color: #0b4f75;
   text-decoration: underline;
 }
 
-/* line 691, screen.scss */
+/* line 715, screen.scss */
 #newsBody a:link, #newsBody a:active, #newsBody a:visited {
   color: #809EAC;
   text-decoration: none;
 }
-/* line 695, screen.scss */
+/* line 719, screen.scss */
 #newsBody a:hover {
   color: #0b4f75;
   text-decoration: underline;
 }
 
-/* line 701, screen.scss */
+/* line 725, screen.scss */
 form {
   margin: 0px;
   padding: 0px;
 }
-/* line 704, screen.scss */
+/* line 728, screen.scss */
 form input[type='submit'] {
   background-color: #db652f;
   padding: 6px 18px !important;
@@ -911,32 +941,32 @@ form input[type='submit'] {
   border-radius: 0;
 }
 
-/* line 714, screen.scss */
+/* line 738, screen.scss */
 .formbox {
   width: 100%;
 }
-/* line 717, screen.scss */
+/* line 741, screen.scss */
 .lt-ie9 .formbox.form-half {
   width: 49%;
   float: left;
 }
-/* line 719, screen.scss */
+/* line 743, screen.scss */
 .lt-ie9 .formbox.form-half:first-of-type {
   margin-right: 2%;
 }
 @media screen and (min-width: 600px) {
-  /* line 717, screen.scss */
+  /* line 741, screen.scss */
   .formbox.form-half {
     width: 49%;
     float: left;
   }
-  /* line 719, screen.scss */
+  /* line 743, screen.scss */
   .formbox.form-half:first-of-type {
     margin-right: 2%;
   }
 }
 
-/* line 727, screen.scss */
+/* line 751, screen.scss */
 .border {
   border: 0px;
   background-color: #fff;
@@ -947,7 +977,7 @@ form input[type='submit'] {
   color: #666666;
 }
 
-/* line 737, screen.scss */
+/* line 761, screen.scss */
 .go {
   font-family: Arial, Helvetica, Sans Serif;
   font-size: 14px;
@@ -960,12 +990,21 @@ form input[type='submit'] {
   text-transform: uppercase;
 }
 
-/* line 749, screen.scss */
+/* line 773, screen.scss */
 .required {
   color: red;
 }
 
-/* line 753, screen.scss */
+/* line 778, screen.scss */
+.attor-info h2 {
+  margin-top: 10px;
+}
+/* line 781, screen.scss */
+.attor-info img {
+  margin-bottom: 20px;
+}
+
+/* line 787, screen.scss */
 .attor-heading {
   margin-top: 25px;
 }
@@ -974,13 +1013,13 @@ form input[type='submit'] {
   margin-top: 0;
 }
 @media screen and (min-width: 600px) {
-  /* line 753, screen.scss */
+  /* line 787, screen.scss */
   .attor-heading {
     margin-top: 0;
   }
 }
 
-/* line 760, screen.scss */
+/* line 794, screen.scss */
 .attor {
   width: 100%;
   clear: both;
@@ -992,12 +1031,12 @@ form input[type='submit'] {
   color: #b0babe;
   background-color: transparent;
 }
-/* line 766, screen.scss */
+/* line 800, screen.scss */
 .attor h3 {
   font-size: 16px;
   text-transform: capitalize;
 }
-/* line 770, screen.scss */
+/* line 804, screen.scss */
 .attor figure {
   float: right;
   margin-left: 5%;
@@ -1005,26 +1044,26 @@ form input[type='submit'] {
   overflow: hidden;
   border-radius: 999em;
 }
-/* line 775, screen.scss */
+/* line 809, screen.scss */
 .lt-ie9 .attor figure.left {
   margin-left: 0;
   float: left;
   margin-right: 5%;
 }
 @media screen and (min-width: 600px) {
-  /* line 775, screen.scss */
+  /* line 809, screen.scss */
   .attor figure.left {
     margin-left: 0;
     float: left;
     margin-right: 5%;
   }
 }
-/* line 780, screen.scss */
+/* line 814, screen.scss */
 .attor figure img {
   margin-bottom: -5px;
   width: 100%;
 }
-/* line 785, screen.scss */
+/* line 819, screen.scss */
 .attor .btn {
   background-color: #13446B;
   color: #fff;
@@ -1036,13 +1075,18 @@ form input[type='submit'] {
   padding: 5px 7px;
   border-radius: 3px;
 }
+/* line 829, screen.scss */
+.attor .btn:hover {
+  color: #fff;
+  background-color: #1b6096;
+}
 
-/* line 798, screen.scss */
+/* line 836, screen.scss */
 .video {
   margin-bottom: 25px;
 }
 
-/* line 802, screen.scss */
+/* line 840, screen.scss */
 .current-cases {
   margin-bottom: 20px;
 }
@@ -1057,27 +1101,27 @@ form input[type='submit'] {
  * 
  * March 2010
  */
-/* line 817, screen.scss */
+/* line 855, screen.scss */
 #slider {
   position: relative;
   width: 670px;
   height: 278px;
   background: url(../img/nivo/loading.gif) no-repeat 50% 50%;
 }
-/* line 822, screen.scss */
+/* line 860, screen.scss */
 #slider img {
   position: absolute;
   top: 0px;
   left: 0px;
   display: none;
 }
-/* line 828, screen.scss */
+/* line 866, screen.scss */
 #slider a {
   border: 0;
   display: block;
 }
 
-/* line 834, screen.scss */
+/* line 872, screen.scss */
 .nivo-controlNav {
   position: absolute;
   left: 270px;
@@ -1088,7 +1132,7 @@ form input[type='submit'] {
   bottom: -42px;
   margin: auto;
 }
-/* line 843, screen.scss */
+/* line 881, screen.scss */
 .nivo-controlNav a {
   display: block;
   width: 22px;
@@ -1098,12 +1142,12 @@ form input[type='submit'] {
   margin-right: 3px;
   float: left;
 }
-/* line 851, screen.scss */
+/* line 889, screen.scss */
 .nivo-controlNav a.active {
   background-position: 0 -22px;
 }
 
-/* line 857, screen.scss */
+/* line 895, screen.scss */
 .nivo-directionNav a {
   display: block;
   width: 30px;
@@ -1113,39 +1157,39 @@ form input[type='submit'] {
   border: 0;
 }
 
-/* line 867, screen.scss */
+/* line 905, screen.scss */
 a.nivo-nextNav {
   background-position: -30px 0;
   right: 15px;
 }
-/* line 871, screen.scss */
+/* line 909, screen.scss */
 a.nivo-prevNav {
   left: 15px;
 }
 
-/* line 876, screen.scss */
+/* line 914, screen.scss */
 .nivo-caption {
   text-shadow: none;
   font-family: Helvetica, Arial, sans-serif;
 }
-/* line 879, screen.scss */
+/* line 917, screen.scss */
 .nivo-caption a {
   color: #efe9d1;
   text-decoration: underline;
 }
 
 /* The Nivo Slider styles */
-/* line 887, screen.scss */
+/* line 925, screen.scss */
 .nivoSlider {
   position: relative;
 }
-/* line 889, screen.scss */
+/* line 927, screen.scss */
 .nivoSlider img {
   position: absolute;
   top: 0px;
   left: 0px;
 }
-/* line 894, screen.scss */
+/* line 932, screen.scss */
 .nivoSlider a.nivo-imageLink {
   position: absolute;
   top: 0px;
@@ -1161,7 +1205,7 @@ a.nivo-prevNav {
 
 /* If an image is wrapped in a link */
 /* The slices and boxes in the Slider */
-/* line 912, screen.scss */
+/* line 950, screen.scss */
 .nivo-slice {
   display: block;
   position: absolute;
@@ -1169,7 +1213,7 @@ a.nivo-prevNav {
   height: 100%;
 }
 
-/* line 919, screen.scss */
+/* line 957, screen.scss */
 .nivo-box {
   display: block;
   position: absolute;
@@ -1177,7 +1221,7 @@ a.nivo-prevNav {
 }
 
 /* Caption styles */
-/* line 927, screen.scss */
+/* line 965, screen.scss */
 .nivo-caption {
   position: absolute;
   left: 0px;
@@ -1189,23 +1233,23 @@ a.nivo-prevNav {
   width: 100%;
   z-index: 8;
 }
-/* line 937, screen.scss */
+/* line 975, screen.scss */
 .nivo-caption p {
   padding: 5px;
   margin: 0;
 }
-/* line 941, screen.scss */
+/* line 979, screen.scss */
 .nivo-caption a {
   display: inline !important;
 }
 
-/* line 946, screen.scss */
+/* line 984, screen.scss */
 .nivo-html-caption {
   display: none;
 }
 
 /* Direction nav styles (e.g. Next & Prev) */
-/* line 952, screen.scss */
+/* line 990, screen.scss */
 .nivo-directionNav a {
   position: absolute;
   top: 45%;
@@ -1213,76 +1257,302 @@ a.nivo-prevNav {
   cursor: pointer;
 }
 
-/* line 959, screen.scss */
+/* line 997, screen.scss */
 .nivo-prevNav {
   left: 0px;
 }
 
-/* line 963, screen.scss */
+/* line 1001, screen.scss */
 .nivo-nextNav {
   right: 0px;
 }
 
 /* Control nav styles (e.g. 1,2,3...) */
-/* line 969, screen.scss */
+/* line 1007, screen.scss */
 .nivo-controlNav a {
   position: relative;
   z-index: 9;
   cursor: pointer;
 }
-/* line 973, screen.scss */
+/* line 1011, screen.scss */
 .nivo-controlNav a.active {
   font-weight: bold;
 }
 
-/* line 979, screen.scss */
+/* line 1016, screen.scss */
+.open-button {
+  display: block;
+  color: #db652f;
+  position: absolute;
+  left: 7px;
+}
+
+/* line 1023, screen.scss */
 ul.acc {
   margin-left: 0;
   padding-left: 0 !important;
 }
 
-/* line 986, screen.scss */
+/* line 1030, screen.scss */
 .acc li {
   list-style-type: none;
 }
 
-/* line 990, screen.scss */
+/* line 1034, screen.scss */
 .acc li .acc-head {
   cursor: pointer;
   position: relative;
   padding: 10px 20px;
-  background-color: #e1e1e1;
+  background-color: #cfd5d8;
 }
 
-/* line 997, screen.scss */
+/* line 1041, screen.scss */
 .acc li .acc-head i {
   position: absolute;
   top: 22px;
   right: 15px;
 }
 
-/* line 1003, screen.scss */
+/* line 1047, screen.scss */
 .acc-panel {
   padding: 10px 20px;
-  background-color: #d4d4d4;
+  background-color: #dde2e3;
 }
-/* line 1006, screen.scss */
+/* line 1051, screen.scss */
 .acc-panel a {
   display: inline-block;
   padding: 4px 5px;
   float: right;
-  color: #fff;
+  color: #fff !important;
   background-color: #db652f;
   border-radius: 3px;
   margin-top: 6px;
-  text-decoration: none;
+  text-decoration: none !important;
 }
-/* line 1015, screen.scss */
+/* line 1060, screen.scss */
 .acc-panel a:hover {
-  color: #fff;
+  color: #fff !important;
   background-color: #e3855a;
 }
 
+/* Remodal - v0.1.6 - 2014-05-16
+ * https://github.com/VodkaBears/remodal
+ * Copyright (c) 2014 VodkaBears; */
+/* ==========================================================================
+   Remodal necessary styles
+   ========================================================================== */
+/* Hide scroll bar */
+/* line 1077, screen.scss */
+html.remodal_lock, body.remodal_lock {
+  overflow: hidden;
+}
+
+/* Anti FOUC */
+/* line 1083, screen.scss */
+.remodal, [data-remodal-id] {
+  visibility: hidden;
+}
+
+/* Overlay necessary styles */
+/* line 1089, screen.scss */
+.remodal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  display: none;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  text-align: center;
+}
+
+/* line 1104, screen.scss */
+.remodal-overlay:after {
+  display: inline-block;
+  height: 100%;
+  margin-left: -0.05em;
+  content: '';
+}
+
+/* Fix iPad, iPhone glitches */
+/* line 1114, screen.scss */
+.remodal-overlay > * {
+  -webkit-transform: translateZ(0px);
+}
+
+/* Modal dialog necessary styles */
+/* line 1120, screen.scss */
+.remodal {
+  position: relative;
+  display: inline-block;
+}
+
+/* ==========================================================================
+   Remodal default theme
+   ========================================================================== */
+/* Default theme font */
+/*@import url(http://fonts.googleapis.com/css?family=Exo+2:700,400&subset=latin,cyrillic);
+
+.remodal, .remodal * {
+    font-family: 'Exo 2', sans-serif;
+}*/
+/* Background for effects */
+/* line 1140, screen.scss */
+.remodal-bg {
+  -webkit-transition: -webkit-filter 0.2s linear;
+  -moz-transition: -moz-filter 0.2s linear;
+  -o-transition: -o-filter 0.2s linear;
+  transition: filter 0.2s linear;
+}
+
+/* line 1147, screen.scss */
+body.remodal_active .remodal-bg {
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+
+/* Overlay default theme styles */
+/* line 1157, screen.scss */
+.remodal-overlay {
+  opacity: 0;
+  background: rgba(34, 34, 34, 0.8);
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+/* line 1166, screen.scss */
+body.remodal_active .remodal-overlay {
+  opacity: 1;
+}
+
+/* Modal dialog default theme styles */
+/* line 1172, screen.scss */
+.remodal {
+  width: 100%;
+  min-height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 16px;
+  background: #f4f4f4;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0px 0px 8px #171a24;
+  box-shadow: 0px 0px 8px #171a24;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  -moz-transition: -moz-transform 0.2s linear;
+  -o-transition: -o-transform 0.2s linear;
+  transition: transform 0.2s linear;
+}
+
+/* line 1198, screen.scss */
+.modal-content {
+  padding: 35px;
+}
+
+/* Modal dialog vertical align  */
+/* line 1212, screen.scss */
+.remodal, .remodal-overlay:after {
+  vertical-align: middle;
+}
+
+/* Close button */
+/* line 1218, screen.scss */
+.remodal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  /*    -webkit-border-radius: 50%;
+      border-radius: 50%;*/
+  border: 1px solid #db652f;
+  -webkit-transition: background 0.2s linear;
+  -moz-transition: background 0.2s linear;
+  -o-transition: background 0.2s linear;
+  transition: background 0.2s linear;
+}
+/* line 77, libs/_mixins.scss */
+.lt-ie9 .remodal-close {
+  top: 35px;
+  right: 35px;
+  width: 40px;
+  height: 40px;
+}
+@media screen and (min-width: 960px) {
+  /* line 1218, screen.scss */
+  .remodal-close {
+    top: 35px;
+    right: 35px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* line 1243, screen.scss */
+.remodal-close:after {
+  display: block;
+  margin-top: 1px;
+  font-size: 30px;
+  font-family: Arial, 'Helvetica CY', 'Nimbus Sans L', sans-serif !important;
+  font-weight: lighter !important;
+  content: "×";
+  line-height: 28px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #db652f;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+/* line 77, libs/_mixins.scss */
+.lt-ie9 .remodal-close:after {
+  margin-top: 5px;
+  font-size: 40px;
+}
+@media screen and (min-width: 960px) {
+  /* line 1243, screen.scss */
+  .remodal-close:after {
+    margin-top: 5px;
+    font-size: 40px;
+  }
+}
+
+/* line 1266, screen.scss */
+.remodal-close:hover, .remodal-close:active {
+  background: #db652f;
+}
+
+/* line 1270, screen.scss */
+.remodal-close:hover.remodal-close:after, .remodal-close:active.remodal-close:after {
+  color: #f4f4f4;
+}
+
+/* Dialog buttons */
+/* Media queries
+   ========================================================================== */
+@media only screen and (min-width: 40.063em) {
+  /* line 1321, screen.scss */
+  .remodal {
+    max-width: 910px;
+    margin: 20px auto;
+    min-height: 0;
+    /*
+            -webkit-border-radius: 6px;
+            border-radius: 6px;*/
+  }
+}
 /* ::Import styles */
 /* ------------------------------------------------------------ */
 /* line 207, libs/_mixins.scss */
@@ -1309,7 +1579,7 @@ ul.acc {
   }
 }
 
-/* line 1035, screen.scss */
+/* line 1344, screen.scss */
 .row {
   position: relative;
   margin-left: auto;
@@ -1318,7 +1588,7 @@ ul.acc {
   padding-right: 20px;
 }
 @media screen and (min-width: 420px) {
-  /* line 1035, screen.scss */
+  /* line 1344, screen.scss */
   .row {
     min-width: 420px;
   }
@@ -1369,7 +1639,7 @@ ul.acc {
   }
 }
 @media screen and (min-width: 600px) {
-  /* line 1035, screen.scss */
+  /* line 1344, screen.scss */
   .row {
     padding-left: 40px;
     padding-right: 40px;
@@ -1470,7 +1740,7 @@ ul.acc {
   }
 }
 @media screen and (min-width: 960px) {
-  /* line 1035, screen.scss */
+  /* line 1344, screen.scss */
   .row {
     min-width: 960px;
   }
@@ -1593,7 +1863,7 @@ ul.acc {
   }
 }
 @media screen and (min-width: 960px) {
-  /* line 1035, screen.scss */
+  /* line 1344, screen.scss */
   .row {
     min-width: 960px;
   }
@@ -1764,12 +2034,12 @@ ul.acc {
   }
 }
 @media screen and (min-width: 960px) {
-  /* line 1035, screen.scss */
+  /* line 1344, screen.scss */
   .row {
     width: 960px;
   }
 }
-/* line 1064, screen.scss */
+/* line 1373, screen.scss */
 .lt-ie9 .row {
   width: 960px;
 }
@@ -1939,7 +2209,7 @@ ul.acc {
   display: inline-block;
 }
 
-/* line 1072, screen.scss */
+/* line 1381, screen.scss */
 .gutter-grid {
   position: relative;
 }
@@ -1949,13 +2219,13 @@ ul.acc {
   left: -3%;
 }
 @media screen and (min-width: 420px) {
-  /* line 1072, screen.scss */
+  /* line 1381, screen.scss */
   .gutter-grid {
     min-width: 103%;
     left: -3%;
   }
 }
-/* line 1079, screen.scss */
+/* line 1388, screen.scss */
 .lt-ie9 .gutter-grid {
   max-width: 100%;
   min-width: auto;
@@ -1965,7 +2235,7 @@ ul.acc {
 /* ::Print */
 /* ------------------------------------------------------------ */
 @media print {
-  /* line 1091, screen.scss */
+  /* line 1400, screen.scss */
   body {
     line-height: 0.55em;
     font-size: 62.5%;

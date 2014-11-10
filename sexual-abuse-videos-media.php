@@ -12,11 +12,11 @@
     <div id="whiteWrap">
    	<?php include("inc/mid.php"); ?> 
     
-            <section id="content" class="row">
+            <section class="content row">
            <div class="gutter-grid">
-            <div class="as-grid with-gutter colspan12-8 colspan6-4 colspan2-2">
+            <div id="cms-area" class="editable typeset as-grid with-gutter colspan12-8 colspan6-4 colspan2-2">
                 <h1>Our Team Taking Action</h1>
-                <p class="typeset">
+                <p>
                 Sexual abuse thrives in secrecy and silence. While many survivors want to maintain privacy during this process there are others who find speaking out helps in the healing process.   When our brave clients speak out and reveal what happened to them and inform the general public, kids are protected. 
                 <br><br>
                 The media is particularly crucial to the advancement of our cause to protect children.  Through press conferences, media statements, and television interviews, we can shine a light on the evil deeds that are done in the dark.  Members of the media often contact our attorneys to offer comment on various issues surrounding sexual abuse, rape, and sexual exploitation.  

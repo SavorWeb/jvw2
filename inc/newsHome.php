@@ -1,4 +1,4 @@
-<h1 class="center">Our Current Cases</h1>
+<h1>Our Current Cases</h1>
 <?php
     $XMLFILE = "http://clergyabuse.wordpress.com/feed/";
     $TEMPLATE = "files/template.html";

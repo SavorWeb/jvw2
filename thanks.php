@@ -11,16 +11,17 @@
     <div id="whiteWrap">
    	<?php include("inc/mid.php"); ?> 
     
-            <section id="content" class="baseWidth">
-                <div id="news">
-        <?php include("inc/news.php"); ?> 
+            <section class="content row">
+           <div class="gutter-grid">
+            <div id="cms-area" class="typeset editable as-grid with-gutter colspan12-8 colspan6-4 colspan2-2">
+                <h1>Thank You</h1>
+                <p>We'll be contacting you confidentially regarding your inquiry.</p>
+              <div class="as-grid with-gutter colspan12-4 colspan6-2 colspan2-2">
+                    
+                    <?php include("inc/news.php"); ?> 
                     
                 </div>
-                
-                <div id="bodyMain">
-                <h1>Thank You</h1>
-                <p class="typeset">We'll be contacting you confidentially regarding your inquiry.</p>
-                </div><!--bodyMain-int-->
+                </div>
             </section><!--content-->
         </div>
         

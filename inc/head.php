@@ -17,7 +17,7 @@
 </script> 
   <script src="js/jquery.js"></script>
 <!--powers Nivo slider-->
-<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
 <script type="text/javascript">
    $(window).load(function() {
